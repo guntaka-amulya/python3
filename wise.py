@@ -46,7 +46,6 @@ while k != 'Z':
                 t2 = 0  
         if k!='A' and k!='B' and k!='L'and k!='R' and k != 'Z':
             print("This puzzle has no configuration.")
-            exit()             
         elif p1 != None and p1 >=0:
             if k == 'A':
                 t3 = 0
