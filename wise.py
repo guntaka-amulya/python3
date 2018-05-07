@@ -19,6 +19,7 @@ def swap(x,y):
     x,y = y,x
     l = [x,y]
     return l
+print("input only alphabets:")
 s1 = convertlist(input())
 s2 = convertlist(input())
 s3 = convertlist(input())
@@ -26,6 +27,7 @@ s4 = convertlist(input())
 s5 = convertlist(input())
 p1 = p2 = p3 = p4 = p5 =-1
 t1 = t2 = t3 = t4 = t5 = 1
+print("enter any keys among A-above,L-left,R-right,B-below,0-output,Z-Quit")
 k = input("enter key:")
 if k == 'Z':
     print ("Quit")
@@ -45,7 +47,8 @@ while k != 'Z':
             if k == 'R':
                 t2 = 0  
         if k!='A' and k!='B' and k!='L'and k!='R' and k != 'Z':
-            print("This puzzle has no configuration.")
+           # print("This puzzle has no configuration.")
+            exit()             
         elif p1 != None and p1 >=0:
             if k == 'A':
                 t3 = 0
